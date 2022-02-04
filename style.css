@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #381e3b;
+    width: 700px;
+    justify-content: center;
+    height: 700px;
+    border: 10px solid #ab6bb2;
+    margin: auto;
+}
+header{
+    background: linear-gradient(15deg, #b68c8c,#010101,#086208);
+    padding: 12px 91px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+    background-color: #920057;
+    color: #021c7e;
+    border: 3px dotted #fafafa;
+    border-radius: 41px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    color: rgb(42, 165, 97);
+    width: 474px;
+}
+input{
+    width: 52%;
+    padding: 12px;
+    margin-right: 3px;
+    border: 2px solid blue;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    background: radial-gradient(#785656, black);
+    color: white;
+    text-align: center;
+}
+.btn{
+    margin-left: 0;
+    width: 25%;
+    padding: 12px;
+    background: blue;
+    color: #9a8c8c;
+    border: 2px solid #9a8f8f;
+    border-radius: 22px 0px 29px 0px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color:purple ;
+    color: grey;
+}
+ul li{
+position: relative;
+background: greenyellow;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+cursor: pointer;
+padding: 12px 8px;
+transition: 0.2s;
+list-style-type: none;
+}
+
+ul li:nth-child(odd){
+    background: rgb(42, 165, 97);
+}
+ul li:hover{
+    background: rgb(19, 73, 189);
+}
+ul li.checked{
+    background: #18328e;
+    color: #b4009e;
+    text-decoration: line-through;
+}
+
+ul li.checked:before{
+    content: "";
+    position: absolute;
+    border-color: darkblue;
+    border-style: 2px solid ;
+    border-width: 0 2px 0 2px;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+}
+.close:hover{
+    background-color: darkcyan;
+    color: white;
+}
