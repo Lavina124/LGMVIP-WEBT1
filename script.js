@@ -8,7 +8,7 @@ for (i = 0; i < myNode.length; i++) {
   myNode[i].appendChild(span);
 }
 
-// Create a new list item when clicking on the "Add" button
+// Create a new list item 
 function MyElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myIn").value;
@@ -35,7 +35,7 @@ function MyElement() {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// checked symbol 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -43,7 +43,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Click on a close button to hide the current list item
+// close button 
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
